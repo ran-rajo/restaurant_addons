@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['restaurant_base'],
+    'depends': ['restaurant_base','point_of_sale','purchase','sale'],
 
     # always loaded
     'data': [
@@ -28,6 +28,11 @@
         'views/views.xml',
         'views/templates.xml',
     ],
+    'assets': {
+        'point_of_sale.assets': [
+            '/restaurant_pos/static/src/js/model.js',
+        ],
+    },
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
